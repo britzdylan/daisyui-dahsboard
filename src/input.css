@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-sans prose dark:prose-invert;
+    }
+}
+
+@layer components {
+    .public-layout {
+        @apply flex min-h-screen;
+    }
+}
