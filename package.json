@@ -2,10 +2,18 @@
   "name": "daisy-ui-dashbaord",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "./public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/styles/output.css --watch",
+    "start": "http-server ./dist -p 0 -c-1"
   },
   "author": "Dylan Britz",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.47.0"
+  }
 }
