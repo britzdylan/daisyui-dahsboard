@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css"></link>
+    <title>Daisy UI Dashboard</title>
+</head>
+<body class="public-layout">
+    <main class="main auth">
+        <img class="logo md:hidden !m-0 absolute top-4 left-4" src="./img/logo-light.png" alt="">
+        <div class="sign-up">
+            <h1>Sign In</h1>
+            <p class="font-semibold">Sign In with Open account</p>
+            <div class="inline w-full">
+                <button class="btn btn-outline oAuth-btn"><img src="./img/google.svg" />Google</button>
+                <button class="btn btn-outline oAuth-btn"><img src="./img/apple-light.svg" />Apple ID</button>
+            </div>
+            <hr />
+            <p class="font-semibold">Or continue with email address</p>
+            <div class="form-control w-full">
+                <label class="input-group">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                  </span>
+                  <input type="text" placeholder="Email" class="input input-bordered w-full" />
+                </label>
+              </div>
+              <div class="form-control w-full mt-2">
+                <label class="input-group">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>                  
+                  </span>
+                  <input type="password" placeholder="Password" class="input input-bordered w-full" />
+                </label>
+              </div>
+            <button class="btn btn-primary w-full mt-2">Continue</button>
+            <small class="mt-12 font-semibold">This site is protected by reCAPTCHA and the Google Privacy Policy.</small>
+            <p class="absolute top-4 right-4 text-white font-semibold cursor-pointer"><span class="text-sm text-neutral-content">Need an account?</span> Sign Up</p>
+        </div>
+    </main>
+</body>
+</html>

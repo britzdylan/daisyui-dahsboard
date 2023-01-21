@@ -6,6 +6,10 @@
     html {
         @apply font-sans  prose dark:prose-invert text-base prose-p:my-4;
     }
+
+    hr {
+        @apply !my-8 h-1 w-full;
+    }
 }
 
 @layer utilities {
@@ -34,7 +38,7 @@
     }
 
     .side-bar {
-        @apply hidden flex-shrink-0 w-full max-w-sm bg-gray-100 dark:bg-base-300 p-4 md:flex flex-col;
+        @apply hidden flex-shrink-0 w-full max-w-xs bg-gray-100 dark:bg-base-300 p-4 md:flex flex-col;
     }
 
     .side-bar .login-pic {
@@ -70,8 +74,12 @@
         @apply hover:bg-transparent hover:text-base-content gap-2 md:w-max w-full flex-grow;
     }
 
-    hr {
-        @apply !my-8 h-1 w-full;
+    .aside.menu  {
+        @apply mt-16 w-full text-lg font-semibold gap-2 flex-grow;
+    }
+
+    .menu-compact > li, .menu > li {
+        @apply rounded-md gap-2 overflow-hidden;
     }
     
 }
