@@ -8,7 +8,7 @@
     }
 
     hr {
-        @apply !my-8 h-1 w-full;
+        @apply border-base-content !h-0 !m-0 !my-2 w-full;
     }
 }
 
@@ -23,8 +23,8 @@
 
     }
 
-    .inline {
-        @apply flex flex-col  md:flex-row gap-4 items-center;
+    .in-line {
+        @apply flex flex-col md:flex-row gap-4 items-center;
     }
 }
 
@@ -57,14 +57,17 @@
         @apply list-checked;
     }
 
-    .main.auth {
-        @apply flex flex-col items-center justify-center flex-grow w-full;
+    .main {
+        @apply flex flex-col flex-grow;
     }
 
-    .main.auth .sign-up {
+    .main.auth {
+        @apply items-center justify-center;
+    }
+
+    .main.auth form{
         @apply flex flex-col items-start justify-center flex-grow w-full mx-auto max-w-xs text-left px-4 md:px-0;
     }
-
 
     .btn > img {
         @apply h-auto w-6 m-0;
@@ -82,4 +85,8 @@
         @apply rounded-md gap-2 overflow-hidden;
     }
     
+
+    .navbar {
+        @apply bg-base-200 justify-between;
+    }
 }
